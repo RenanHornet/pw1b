@@ -21,8 +21,11 @@ header{
     grid-area: cabecalho;
 }
 main{
-    background-color: #e05da1;
+    background-color: #fff;
     grid-area: secao;
+    display: flex;
+    
+
 }
 aside{
     background-color: #e0d475;
