@@ -7,17 +7,17 @@ body, html{
 .container{
     width: 80%;
     height: 100%;
-    background-color: #ffff65;
+    background-color: #000000;
     margin:0 auto;
 
 }
 header{
-    height: 175px;
+    height: 100px;
     width: 100%;
     background-color: #ff0800;
 }
 nav{
-    height: 175px;
+    height: 75px;
     width: 100%;
     background-color: purple;
 }
@@ -28,8 +28,9 @@ nav{
 
 }
 .produto{
-    height: 500px;
+    height: 350px;
     width: 100%;
+    display: flex;
 }
 .img-produto{
     width: 50%;
@@ -40,4 +41,22 @@ nav{
     width: 50%;
     height: 100%;
     background-color: darkgoldenrod;
+}
+.linha-botao-preco{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    margin-top: 75px;
+}
+.preco{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #ff6500;
+}
+.botao-comprar{
+    background-color: #ff6500;
+    color: #ffffff;
+    padding: 0 75px;
+    border: none;
 }
