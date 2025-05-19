@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Elemento</title>
+</head>
+<body>
+    <label>Clique aqui para mudar a cor do fundo: </label>
+    <input type="color" value="" id="corFundo"/><br><br>
+    <label>Clique aqui para mudar a cor da fonte</label>
+    <input type="color" value="" id="corFonte"/>
+    <div id="caixa"></div>
+    <button onclick="CriarElemento()" id="botao">
+        Criar Elemento
+    
+    </button>
+    <script>
+        function CriarElemento()
+        {
+            var corFundo = document.getElementById("corFundo")
+            var corFonte = document.getElementById("corFonte")
+            //var corfundo = prompt("Digite a cor de fundo do programa")
+            var elemento = document.createElement("h1")
+            //elemento.style.backgroundColor = corfundo
+            elemento.style.backgroundColor = corFundo.value
+            elemento.style.color = corFonte.value
+            elemento.style.fontSize = "50px"
+            elemento.innerText = "Oi Mundo!"
+            elemento.classList.add("ClassCampo")
+
+            var  caixa = document.getElementById("caixa")
+            caixa.append(elemento)
+        }
+    </script>
+   
+
+
+</body>
+</html>
